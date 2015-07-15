@@ -13,6 +13,6 @@ data <- data[data$Date == "2007-02-01" | data$Date == "2007-02-02",]
 par(mar = c(5,5,4,2))
 plot(data$Time,as.numeric(levels(data$Global_active_power)[data$Global_active_power]), type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
-# Generate png image of histogram
+# Generate png image of graph
 dev.copy(png,'plot2.png')
 dev.off()

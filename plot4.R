@@ -19,6 +19,6 @@ lines(data$Time,data$Sub_metering_3, col = "blue")
 legend("topright", bty = "n", cex = 0.7, lty = 1, col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 plot(data$Time,as.numeric(levels(data$Global_reactive_power)[data$Global_reactive_power]), type = "l", xlab = "datetime", ylab = "Global_reactive_power")
 
-# Generate png image of histogram
+# Generate png image of graphs
 dev.copy(png,'plot4.png')
 dev.off()

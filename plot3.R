@@ -18,6 +18,6 @@ lines(data$Time,data$Sub_metering_3, col = "blue")
 # Generate legend for plots
 legend("topright", lty = 1, col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
-# Generate png image of histogram
+# Generate png image of graph
 dev.copy(png,'plot3.png')
 dev.off()
